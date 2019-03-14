@@ -37,7 +37,7 @@ void draw(){
 
 // function to send an OSC message
 void sendOsc(String route, String value){
-  OscMessage msg = new OscMessage(route);
+  OscMessage msg = new OscMessage(route); // "/mouse"
   msg.add(value);
   oscP5.send(msg, net_location);
 }
